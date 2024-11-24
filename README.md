@@ -130,10 +130,17 @@ Aplicar modelos supervisados de Machine Learning.
 8. Inferencia de modelos
 
 ### Conclusiones
+- Se limpiaron las quejas eliminando caracteres, puntuación y números innecesarios y convirtiendo el texto a minúsculas.
+- La lematización y el filtrado de categorías gramaticales enfocaron el texto en sustantivos para retener información significativa.
+- Los términos de alta frecuencia como "credit," "card," "account," and "payment"  resaltaron problemas comunes de los clientes.
+- Las nubes de palabras y el análisis de n-gramas revelaron patrones de quejas específicos, como: disputes, account issues, and mortgage problems.
+- La vectorización TF-IDF capturó los términos en relación con el corpus de quejas, enfatizando las palabras distintivas en cada tema. Esta punto permitió que el modelo diferenciara entre quejas en función de distribuciones de palabras únicas.
+- Se aplicó NMF para agrupar las quejas, los temas facilitaron la clasificación y la comprensión de las inquietudes comunes de los clientes y los ajustes manuales garantizaron la precisión y la interpretabilidad.
+- PyCaret simplificó la selección y validación del modelo, lo que confirmó que la regresión logística es la mejor opción.
 
-Por medio de al libreria Pycaret se entrenaron los 4 modelos (Logistic regression, Decision Tree, Random Forest, Naive Bayes), por medio de la libreia Pycaret se encontro que el mejor resultado es el modelo Logistic Regression, con mejor rendimiento para clasificar las quejas en temas predefinidos.
+El resultado que demuestra el mejor modelo Logistic Regression:
 
-Model |	Accuracy | AUC | Recall	| Prec.	| F1	| Kappa	| MCC	| TT (Sec)
+Model |	Accuracy | AUC | Recall	| Precision	| F1	| Kappa	| MCC	| TT (Sec)
 --- | --- | --- | --- | --- | --- | --- | --- | --- |
 lr	| Logistic Regression	| 0.9469	| 0.0000	| 0.9469	| 0.9482	| 0.9465	| 0.9317	| 0.9321	| 32.4460
 rf	| Random Forest Classifier	| 0.8341	| 0.9792	| 0.8341	| 0.8458	| 0.8165	| 0.7843	| 0.7882	| 35.3740
@@ -142,15 +149,39 @@ nb	| Naive Bayes	| 0.3833	| 0.6253	| 0.3833	| 0.4386	| 0.3946	| 0.2345	| 0.2404	
 
 
 
-#### Regresión Logística: Las metrias que infican que este modelo tiene el mejor rendimiento con respecto a los demas.
+#### Regresión Logística
+Las metrias que infican que este modelo tiene el mejor rendimiento con respecto a los demas.
 
 - **Accuracy:** 94,69 % – Indica un alto porcentaje de clasificaciones correctas obtenidas por el modelo.
+- **Precision y Recall:** Ambas metricas cuentan con un valor similar, lo que significa que el rendimiento encontro una mayor cantidad de verdaderos positivos sin muchos falsos positivos.
 - **F1-Score:** 94,65 % – Garantiza un equilibrio entre precision y recall.
-- **Kappa Score:** 93,17 % – Sugiere una excelente concordancia entre las predicciones y las etiquetas verdaderas, incluso teniendo en cuenta el azar.
-- **MCC:** 93,21 % – Demuestra una fuerte correlación positiva entre los temas predichos y los reales.
+- **Kappa y MCC:** 93 % – Ambas metricas cuentan con un valor similar, lo que significa que hay concordancia entre las predicciones y las etiquetas verdaderas.
+- **Training Time:** 32.45 sec – Razonable
+
+- **AUC:** 0,0000 % - probablemente debido a los requisitos de clasificación binaria para ROC; PyCaret podría haber omitido el cálculo de esto para objetivos de múltiples clases.
 
 
 #### Árbol de Decisión
+Demuestra ser un buen modelo despues del Logistic Regression.
+
+- **Accuracy:** 83.41% - indica que existe errores en la clasification.
+- **AUC:** (0.9792) - muestra una gran capacidad para distinguir entre clases.
+- **Precision y Recall:** (~84.58% y 83.41%), existe sierto equilibrio pero no se compara con el modelo Logistic Regression.
+- **Training Time:** 35.3740 sec - similar al Logistic Regression pero le toma un poco mas de tiempo.
 
 #### Bosque Aleatorio
+Este resulta ser moderado en comparación con otros modelos
+
+- **Accuracy:** 75.87% - el porcentaje va decanyendo con respecto al modelo Logistic Regression y Random Forest.
+- **AUC:** 0.84% - cuenta con un buen porcentaje de clasificacion.
+- **Precision y Recall:** (~75.96% and 75.87%) - bastante equilibrado pero menor a los modelos previos.
+- **Training Time:** 20.61 sec - el tiempo es mejor que los anteriores modelos.
+
+#### Naive Bayes
+Sus metricas no son las mejores.
+
+- **Accuracy:** 38.33% - el rendimiento esta por debajo del 50%. lo que demuestra que es malo.
+- **AUC:** 0.6253 - refleja una mala discriminación entre clases.
+- **Precision, Recall, F1:** todas debajo del 50% - indica una alta tasa de error en las predicciones.
+- **Training Time:** 8.33 sec - el tiempo de entrenamiento es el mejor que el resto.
 
