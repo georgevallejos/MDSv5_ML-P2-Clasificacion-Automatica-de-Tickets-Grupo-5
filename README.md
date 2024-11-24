@@ -84,6 +84,7 @@ https://github.com/georgevallejos/MDSv5_ML-P2-Clasificacion-Automatica-de-Ticket
 4. Extraer el Dataset del RAR file y cargarlo al Colab.
 
 5. Ejecute todos los pasos en Google Colaboratory, las librerias requeridas seran importadas por defect
+
    Note, el colap le pide reiniciar la sesion para poder importar las librerias correctamente
    
 
