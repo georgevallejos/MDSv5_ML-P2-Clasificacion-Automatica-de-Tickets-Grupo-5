@@ -79,7 +79,7 @@ Puede descargar el código fuente clonando este repositorio usando Git:
 https://github.com/georgevallejos/MDSv5_ML-P2-Clasificacion-Automatica-de-Tickets-Grupo-5.git
 ```
 
-3. Abra el archivo notebook ** NLP - Clasificacion Automatica de Tickets.ipynb ** en Google Colaboratory
+3. Abra el archivo notebook **MDSv5_ML_P2_Clasificacion_ Automatica_ de_ Tickets_Grupo 5.ipynb** en Google Colaboratory
 
 
 ## Declaración del Problema
