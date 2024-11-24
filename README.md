@@ -131,9 +131,15 @@ Aplicar modelos supervisados de Machine Learning.
 
 ### Conclusiones
 
-Regresión Logística
-Árbol de Decisión
-Bosque Aleatorio
+Por medio de al libreria Pycaret se entrenaron los 4 modelos (Logistic regression, Decision Tree, Random Forest, Naive Bayes), dando como resultado como resultado que el modelo Logistic Regression tiene mejores resultados.
+Model |	Accuracy | AUC | Recall	| Prec.	| F1	| Kappa	| MCC	| TT (Sec)
+--- | --- | --- | --- | --- | --- | --- | --- | --- |
+lr	| Logistic Regression	| 0.9469	| 0.0000	| 0.9469	| 0.9482	| 0.9465	| 0.9317	| 0.9321	| 32.4460
+rf	| Random Forest Classifier	| 0.8341	| 0.9792	| 0.8341	| 0.8458	| 0.8165	| 0.7843	| 0.7882	| 35.3740
+dt	| Decision Tree Classifier	| 0.7587	| 0.8447	| 0.7587	| 0.7596	| 0.7586	| 0.6908	| 0.6910	| 20.6130
+nb	| Naive Bayes	| 0.3833	| 0.6253	| 0.3833	| 0.4386	| 0.3946	| 0.2345	| 0.2404	| 8.3320
+
+
 
 #### Regresión Logística
 
