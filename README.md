@@ -138,7 +138,7 @@ Aplicar modelos supervisados de Machine Learning.
 - Se aplicó NMF para agrupar las quejas, los temas facilitaron la clasificación y la comprensión de las inquietudes comunes de los clientes y los ajustes manuales garantizaron la precisión y la interpretabilidad.
 - PyCaret simplificó la selección y validación del modelo, lo que confirmó que la regresión logística es la mejor opción.
 
-El resultado que demuestra el mejor modelo Logistic Regression:
+Resultado de PyCaret que demuestra que el mejor modelo es Logistic Regression:
 
 Model |	Accuracy | AUC | Recall	| Precision	| F1	| Kappa	| MCC	| TT (Sec)
 --- | --- | --- | --- | --- | --- | --- | --- | --- |
