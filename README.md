@@ -81,6 +81,12 @@ https://github.com/georgevallejos/MDSv5_ML-P2-Clasificacion-Automatica-de-Ticket
 
 3. Abra el archivo notebook **MDSv5_ML_P2_Clasificacion_ Automatica_ de_ Tickets_Grupo 5.ipynb** en Google Colaboratory
 
+4. Extraer el Dataset del RAR file y cargarlo al Colab.
+
+5. Ejecute todos los pasos en Google Colaboratory, las librerias requeridas seran importadas por defect
+   Note, el colap le pide reiniciar la sesion para poder importar las librerias correctamente
+   
+
 
 ## Declaración del Problema
 
