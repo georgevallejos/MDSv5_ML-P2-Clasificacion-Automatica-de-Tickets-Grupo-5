@@ -131,7 +131,8 @@ Aplicar modelos supervisados de Machine Learning.
 
 ### Conclusiones
 
-Por medio de al libreria Pycaret se entrenaron los 4 modelos (Logistic regression, Decision Tree, Random Forest, Naive Bayes), dando como resultado como resultado que el modelo Logistic Regression tiene mejores resultados.
+Por medio de al libreria Pycaret se entrenaron los 4 modelos (Logistic regression, Decision Tree, Random Forest, Naive Bayes), por medio de la libreia Pycaret se encontro que el mejor resultado es el modelo Logistic Regression, con mejor rendimiento para clasificar las quejas en temas predefinidos.
+
 Model |	Accuracy | AUC | Recall	| Prec.	| F1	| Kappa	| MCC	| TT (Sec)
 --- | --- | --- | --- | --- | --- | --- | --- | --- |
 lr	| Logistic Regression	| 0.9469	| 0.0000	| 0.9469	| 0.9482	| 0.9465	| 0.9317	| 0.9321	| 32.4460
@@ -141,7 +142,13 @@ nb	| Naive Bayes	| 0.3833	| 0.6253	| 0.3833	| 0.4386	| 0.3946	| 0.2345	| 0.2404	
 
 
 
-#### Regresión Logística
+#### Regresión Logística: Las metrias que infican que este modelo tiene el mejor rendimiento con respecto a los demas.
+
+- **Accuracy:** 94,69 % – Indica un alto porcentaje de clasificaciones correctas obtenidas por el modelo.
+- **F1-Score:** 94,65 % – Garantiza un equilibrio entre precision y recall.
+- **Kappa Score:** 93,17 % – Sugiere una excelente concordancia entre las predicciones y las etiquetas verdaderas, incluso teniendo en cuenta el azar.
+- **MCC:** 93,21 % – Demuestra una fuerte correlación positiva entre los temas predichos y los reales.
+
 
 #### Árbol de Decisión
 
