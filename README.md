@@ -137,7 +137,7 @@ Aplicar modelos supervisados de Machine Learning.
 - La vectorización TF-IDF capturó los términos en relación con el corpus de quejas, enfatizando las palabras distintivas en cada tema. Esta punto permitió que el modelo diferenciara entre quejas en función de distribuciones de palabras únicas.
 - Se aplicó NMF para agrupar las quejas, los temas facilitaron la clasificación y la comprensión de las inquietudes comunes de los clientes y los ajustes manuales garantizaron la precisión y la interpretabilidad.
 - PyCaret simplificó la selección y validación del modelo, lo que confirmó que la regresión logística es la mejor opción.
-- La Inferencia de modelo demostro que es posible reutilizar el modelo para clasificar nuevas muestras de datos y asignar los números de Topics correctamente a los grupos definidos durante el entrenamiento.
+- La Inferencia del modelo demostro que es posible reutilizar el modelo para clasificar nuevas muestras de datos y asignar los números de Topics correctamente a los grupos definidos durante el entrenamiento.
 
 Resultado de PyCaret que demuestra que el mejor modelo es Logistic Regression:
 
