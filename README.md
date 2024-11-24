@@ -85,7 +85,7 @@ https://github.com/georgevallejos/MDSv5_ML-P2-Clasificacion-Automatica-de-Ticket
 
 5. Ejecute todos los pasos en Google Colaboratory, las librerias requeridas seran importadas por defect
 
-   Note, el colap le pide reiniciar la sesion para poder importar las librerias correctamente
+   Note, el colap le pidira reiniciar la sesion para importar las librerias correctamente
    
 
 
