@@ -75,7 +75,7 @@ Puede descargar el código fuente clonando este repositorio usando Git:
 2. Clone el repositorio
 
 ```
-[git clone <GITHUB_REPO_URL>](https://github.com/georgevallejos/MDSv5_ML-P2-Clasificacion-Automatica-de-Tickets-Grupo-5.git)
+[[git clone <GITHUB_REPO_URL>](https://github.com/georgevallejos/MDSv5_ML-P2-Clasificacion-Automatica-de-Tickets-Grupo-5.git)](https://github.com/georgevallejos/MDSv5_ML-P2-Clasificacion-Automatica-de-Tickets-Grupo-5.git)
 ```
 
 3. Abra el archivo notebook ** NLP - Clasificacion Automatica de Tickets.ipynb ** en Google Colaboratory
